@@ -1,9 +1,12 @@
+require("dotenv").config();
 const express = require("express");
+const path = require("path");
+const dbConnect = require(path.join(__dirname, "config", "database.js"));
 const app = express();
 
-require("dotenv").config();
-
 const PORT = process.env.PORT || 5000;
+
+dbConnect();
 
 app.get("*", (req, res) => {
   res.end("wellcome");
