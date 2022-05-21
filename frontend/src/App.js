@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
+// Import components
 import Navbar from "./components/Navbar";
 // Import all views
 import HomeView from "./views/HomeView";
@@ -17,7 +18,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomeView />} />
-          <Route path="/product" element={<ProductView />} />
+          <Route path="/product/:id" element={<ProductView />} />
           <Route path="/cart" element={<CartView />} />
           <Route />
         </Routes>
