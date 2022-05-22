@@ -1,5 +1,5 @@
-import React from "react";
+import styles from "./Backdrop.module.css";
 
-export default function Backdrop() {
-  return <div>Backdrop</div>;
+export default function Backdrop({ show, toggle }) {
+  return show && <div className={styles["backdrop"]} onClick={toggle}></div>;
 }

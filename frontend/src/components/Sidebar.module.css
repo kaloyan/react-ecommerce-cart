@@ -1,0 +1,77 @@
+.sidebar {
+  width: 70%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: all 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.sidebar-links > li {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-links > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--bg-color-smith-black);
+  font-size: 1.6rem;
+}
+
+.sidebar-links > li > a:hover {
+  background-color: var(--bg-color-smith-black);
+  color: var(--bg-color);
+}
+
+.sidebar-links > li > a > span {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.sidebar-cart-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--bg-color-smith-black);
+  color: var(--bg-color);
+  font-size: 1rem;
+  margin-left: 8px;
+}
+
+.sidebar-links > li > a:hover .sidebar-cart-badge {
+  background-color: var(--bg-color);
+  color: var(--bg-color-smith-black);
+}
+
+@media (min-width: 960px) {
+  .sidebar {
+    display: none;
+  }
+}

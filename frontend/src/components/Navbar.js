@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
-function Navbar() {
+function Navbar({ toggle }) {
   return (
     <nav className={styles["navbar"]}>
       {/* Logo */}
@@ -31,7 +31,7 @@ function Navbar() {
       </ul>
 
       {/* Hamburger Menu */}
-      <div className={styles["hamburger-menu"]}>
+      <div className={styles["hamburger-menu"]} onClick={toggle}>
         <div></div>
         <div></div>
         <div></div>

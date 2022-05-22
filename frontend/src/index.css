@@ -3,6 +3,7 @@
   --bg-color-smith-black: #3b3a3a;
   --bg-gray: #333;
   --bg-light-blue: #567ce6;
+  --backdrop: rgba(0, 0, 0, 0.5);
 }
 
 * {
