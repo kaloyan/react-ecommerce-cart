@@ -17,7 +17,6 @@ function App() {
 
   return (
     <div className="app">
-      {/* Navbar */}
       <Navbar toggle={() => setShowSidebar(true)} />
       <Sidebar show={showSidebar} toggle={() => setShowSidebar(false)} />
       <Backdrop show={showSidebar} toggle={() => setShowSidebar(false)} />
@@ -29,9 +28,6 @@ function App() {
           <Route />
         </Routes>
       </main>
-      {/* Home Screen View */}
-      {/* Products Screen View */}
-      {/* Cart Screen View */}
     </div>
   );
 }

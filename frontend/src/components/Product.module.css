@@ -48,3 +48,27 @@
   color: var(--bg-color);
   background-color: var(--bg-light-blue);
 }
+
+@media (max-width: 1232px) {
+  .product {
+    width: 310px;
+  }
+}
+
+@media (max-width: 1115px) {
+  .product {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1028px) {
+  .product {
+    width: 290px;
+  }
+}
+
+@media (max-width: 950px) {
+  .product {
+    width: 280px;
+  }
+}
