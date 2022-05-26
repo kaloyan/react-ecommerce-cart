@@ -17,8 +17,6 @@ app.use(express.json());
 // define routes
 app.use("/api/products", productRoutes);
 
-app.get("*", (req, res) => {
-  res.end("wellcome");
-});
+app.use(express.static("build"));
 
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}...`));
